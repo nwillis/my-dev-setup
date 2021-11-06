@@ -2,7 +2,7 @@
 - Setup Linux from Settings: Settings -> Developers -> Linux development environment -> Turn on
 - *Please remember the username you inputted before creating this environment*
 
-## Change Linux container to ArchLinux
+## Change default Debian Linux container to ArchLinux
 
 **Create ArchLinux container**
 - Power of the Linux container
@@ -56,3 +56,12 @@ logout
 exit
 ```
 - Now you can start Linux as normal by clicking the terminal icon
+
+## Setting NERD font
+*This setting can take effect after reboot, but will disappear once you open the Setting dialog of the terminal.*
+- Press Ctrl+Shift+J to open the developer console when the terminal window is focused.
+- Input following code
+```javascript
+term_.prefs_.set('font-family', 'DejaVu Sans Mono Nerd');
+term_.prefs_.set('user-css-text', '@font-face {font-family: "DejaVu Sans Mono Nerd"; src: url("https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DejaVuSansMono/Regular/complete/DejaVu%20Sans%20Mono%20Nerd%20Font%20Complete%20Mono.ttf"); font-weight: normal; font-style: normal;}')
+```
