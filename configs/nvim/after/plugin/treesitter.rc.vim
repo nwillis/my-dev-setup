@@ -17,11 +17,17 @@ require'nvim-treesitter.configs'.setup {
     "tsx",
     "toml",
     "fish",
-    "php",
     "json",
     "yaml",
     "swift",
     "html",
+    "dart",
+    "go",
+    "bash",
+    "lua",
+    "python",
+    "javascript",
+    "vim",
     "scss"
   },
 }

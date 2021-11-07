@@ -8,7 +8,7 @@
 sudo pacman -Syu tmux neovim fish exa nodejs-lts-fermium npm github-cli
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
-npm i -g diagnostic-languageserver
+npm i -g yarn diagnostic-languageserver
 chsh -s /usr/bin/fish
 exit
 ```

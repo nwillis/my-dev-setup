@@ -14,6 +14,7 @@ alias ls "exa -F"
 alias la "ls -a"
 alias ll "exa -l -g --icons"
 alias lla "ll -a"
+alias l lla
 alias g git
 alias t tmux
 command -qv nvim && alias vi nvim
