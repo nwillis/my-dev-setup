@@ -17,7 +17,7 @@ alias lla "ll -a"
 alias l lla
 alias g git
 alias t tmux
-command -qv nvim && alias vi nvim
+alias vi nvim
 
 set -gx EDITOR nvim
 

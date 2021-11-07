@@ -1,0 +1,5 @@
+# TMUX true color problem with Terminal.app
+# https://discuss.kakoune.com/t/macos-terminal-app-with-tmux-guide/1526
+
+set -g default-terminal "tmux-256color"
+set -u terminal-overrides
