@@ -3,21 +3,33 @@
 ## Install required packages
 *My development environment is fully based on commandline. I use fish + neovim + tmux.*
 
-**Arch Linux(ChromeOS Linux Container)**
+### Arch Linux(ChromeOS Linux Container)
 ```bash
 sudo pacman -Syu tmux neovim fish exa nodejs-lts-fermium npm github-cli
-mkdir ~/.npm-global
-npm config set prefix '~/.npm-global'
-npm i -g yarn diagnostic-languageserver
 chsh -s /usr/bin/fish
 exit
 ```
 
+### MacOSX Terminal
+```bash
+brew install tmux neovim fish exa gh node@14 npm
+sudo sh -c 'echo /opt/homebrew/bin/fish >> /etc/shells'
+chsh -s /opt/homebrew/bin/fish
+exit
+```
+
+### Common Instructions
+```bash
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+npm i -g yarn diagnostic-languageserver
+```
+
 ## Config files
 - Clone this repo to local
-- Execute the install.sh in the folder of this repo
+- Execute the script in the folder of this repo to copy config files
 
-**Fish**
+### Fish
 Install fisher and tide, z
 ```
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
@@ -26,9 +38,15 @@ fisher install jethrokuan/z
 exit
 ```
 
-**Tmux**
-*MacOSX Terminal.app does not support true color, we need to add some operations, no need for linux*
+### Tmux
+MacOSX(only): [Terminal.app does not support true color](https://discuss.kakoune.com/t/macos-terminal-app-with-tmux-guide/1526), we have to do something before nvim is usable.
 
+```bash
+cd
+curl -O https://raw.githubusercontent.com/mawww/kakoune/master/contrib/tmux-256color.terminfo
+/usr/bin/tic -x $HOME/tmux-256color.terminfo
+rm $HOME/tmux-256color.terminfo
+```
 
 **Neovim**
 Install vim-plug
