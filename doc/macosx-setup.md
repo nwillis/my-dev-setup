@@ -27,5 +27,5 @@ Minimalistic software installation. (No need for iCloud login)
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)")
 ```
-- SFMono with NERD patch (https://github.com/epk/SF-Mono-Nerd-Font)
-- Dracula theme for Terminal.app (https://draculatheme.com/terminal)
+- [DejaVu Sans Mono Nerd](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/DejaVuSansMono/Regular/complete/DejaVu%20Sans%20Mono%20Nerd%20Font%20Complete%20Mono.ttf)
+- [Dracula theme for Terminal.app](https://draculatheme.com/terminal)
