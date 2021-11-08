@@ -5,14 +5,14 @@
 
 ### Arch Linux(ChromeOS Linux Container)
 ```bash
-sudo pacman -Syu tmux neovim fish exa nodejs-lts-fermium npm github-cli
+sudo pacman -Syu tmux neovim fish exa nodejs-lts-fermium npm github-cli fzf fd bat
 chsh -s /usr/bin/fish
 exit
 ```
 
 ### MacOSX Terminal
 ```bash
-brew install tmux neovim fish exa gh node@14 npm
+brew install tmux neovim fish exa gh node@14 npm fzf fd bat
 sudo sh -c 'echo /opt/homebrew/bin/fish >> /etc/shells'
 chsh -s /opt/homebrew/bin/fish
 exit
@@ -35,6 +35,7 @@ Install fisher and tide, z
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 fisher install ilancosman/tide
 fisher install jethrokuan/z
+fisher install PatrickF1/fzf.fish
 exit
 ```
 
