@@ -10,6 +10,7 @@ If you use a Mac mini M1 and Chromebook at the same time, and coincidentally(alm
 ## TODO
 ### Shell
 - [x] Ctrl-R to search history in fish shell (PatrickF1/fzf.fish)
+- [ ] Ctrl+Alt+F to call fzf search files conflict in macosx
 
 ### NEOVIM
 - [ ] Native clipboard support
