@@ -22,7 +22,7 @@ exit
 ```bash
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
-npm i -g yarn diagnostic-languageserver
+npm i -g yarn diagnostic-languageserver typescript-language-server neovim
 ```
 
 ## Config files
